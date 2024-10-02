@@ -1,0 +1,12 @@
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/vendor/
+go.sum
+.vscode/
+.DS_Store
+Thumbs.db
+.env
