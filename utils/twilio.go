@@ -8,7 +8,7 @@ import (
 	
 	"fmt"
 	"os"
-	"time"
+	
 
 	"github.com/twilio/twilio-go"
 	openapi "github.com/twilio/twilio-go/rest/api/v2010"
@@ -34,9 +34,9 @@ func SendSMS(to, from, body string) error {
 }
 // Generate2FACode generates a 5-digit 2FA code
 func Generate2FACode() string {
-	rand.Seed(time.Now().UnixNano())
-	code := fmt.Sprintf("%05d", rand.Intn(100000))
-	return code
+	// rand.Seed(time.Now().UnixNano())
+	// code := fmt.Sprintf("%05d", rand.Intn(100000))
+	return ""
 }
 
 // GenerateKeyPair generates a real RSA key pair
